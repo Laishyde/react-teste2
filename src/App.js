@@ -11,7 +11,7 @@ const App = () => {
     setLoading(true); // Define loading como verdadeiro ao iniciar a requisição
     try {
       // URL do seu backend na Vercel
-      const response = await axios.get('https://testando-ewbe.vercel.app/gatinhos'); // Ajuste a URL aqui
+      const response = await axios.get('https://api.thecatapi.com/v1/images/search'); // Ajuste a URL aqui
       setCatUrl(response.data[0].url); // Acesse a URL da imagem corretamente
       setLoading(false); // Define loading como falso após a resposta
     } catch (err) {
